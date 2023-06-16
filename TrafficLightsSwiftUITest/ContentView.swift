@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+   
+    @State private var redOpacity: Double = 0.3
+    @State private var yellowOpacity: Double = 0.3
+    @State private var greenOpacity: Double = 0.3
+    @State private var text = "START"
+    @State private var color: Color = .red
+  
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            VStack {
+                CircleView(color: .red)
+                    .opacity(redOpacity)
+                CircleView(color: .yellow)
+                    .opacity(yellowOpacity)
+                CircleView(color: .green)
+                    .opacity(greenOpacity)
+            }
+            .padding()
+            Spacer()
+            Button(action: switchOnOff) {
+                Text(text)
+                    .font(.title)
+            }
         }
-        .padding()
+    }
+    
+    private func switchOnOff() {
+        text = "NEXT"
+        switch color {
+        case Color.red:
+            greenOpacity = 0.3
+            redOpacity = 1
+            color = .yellow
+        case Color.yellow:
+            redOpacity = 0.3
+            yellowOpacity = 1
+            color = .green
+        default:
+            yellowOpacity = 0.3
+            greenOpacity = 1
+            color = .red
+        }
     }
 }
 

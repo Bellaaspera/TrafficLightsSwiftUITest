@@ -12,6 +12,7 @@
 		7096688A2A3C958700CD42AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709668892A3C958700CD42AE /* Assets.xcassets */; };
 		7096688D2A3C958700CD42AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7096688C2A3C958700CD42AE /* Preview Assets.xcassets */; };
 		709668942A3C95F100CD42AE /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709668932A3C95F100CD42AE /* CircleView.swift */; };
+		709668962A5332F500CD42AE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709668952A5332F500CD42AE /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		709668892A3C958700CD42AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7096688C2A3C958700CD42AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		709668932A3C95F100CD42AE /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		709668952A5332F500CD42AE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				709668852A3C958600CD42AE /* TrafficLightsSwiftUITestApp.swift */,
 				709668872A3C958600CD42AE /* ContentView.swift */,
+				709668952A5332F500CD42AE /* ButtonView.swift */,
 				709668932A3C95F100CD42AE /* CircleView.swift */,
 				709668892A3C958700CD42AE /* Assets.xcassets */,
 				7096688B2A3C958700CD42AE /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				709668942A3C95F100CD42AE /* CircleView.swift in Sources */,
 				709668882A3C958600CD42AE /* ContentView.swift in Sources */,
+				709668962A5332F500CD42AE /* ButtonView.swift in Sources */,
 				709668862A3C958600CD42AE /* TrafficLightsSwiftUITestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

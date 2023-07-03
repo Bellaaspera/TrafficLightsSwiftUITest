@@ -24,7 +24,12 @@ struct ContentView: View {
             }
             .padding()
             Spacer()
-            ButtonView(title: text, action: switchOnOff)
+            ButtonView(title: text) {
+                if text == "START" {
+                    text = "NEXT"
+                }
+                switchOnOff()
+            }
             .padding(16)
         }
     }
